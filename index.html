@@ -15,3 +15,14 @@ layout: default
     <p>{{ seminar.abstract }}</p>
 {% endfor %}
 </ul>
+
+<h3>Past Seminars</h3> 
+<ul>
+{% assign past = site.seminars | sort: 'date' | where_exp:"seminar","seminar.date < site.time" }}%}
+{% for seminar in past limit:2 %}
+    <li><strong>{{ seminar.title }}</strong></li>
+    <p>{{ seminar.date | date_to_string }}</p>
+    <p><strong>Speaker:</strong> {{ seminar.speaker }}</p>
+    <p>{{ seminar.abstract }}</p>
+{% endfor %}
+</ul>
