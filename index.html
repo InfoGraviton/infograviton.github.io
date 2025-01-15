@@ -5,9 +5,9 @@ layout: default
 
 <p>This is the webpage for the InfoGraviton Journal Club</p>
 
-<p><strong>Upcoming:</strong></p> 
+<h3>Upcoming Seminars</h3> 
 <ul>
-{% assign future = site.seminars | sort: 'date' | reverse %}
+{% assign future = site.seminars | sort: 'date' | where_exp:"seminar","seminar.date > site.time" }}%}
 {% for seminar in future limit:3 %}
     <li><strong>{{ seminar.title }}</strong></li>
     <p>{{ seminar.date | date_to_string }}</p>
