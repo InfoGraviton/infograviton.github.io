@@ -9,6 +9,9 @@ layout: default
 <ul>
 {% assign future = site.seminars | sort: 'date' | reverse %}
 {% for seminar in future limit:3 %}
-    <li>{{ seminar.title }}</li>
+    <li><strong>{{ seminar.title }}</strong></li>
+    <p>{{ seminar.date }}</p>
+    <p><strong>Speaker:</strong> {{ seminar.author }}</p>
+    <p>{{ seminar.abstract }}</p>
 {% endfor %}
 </ul>
