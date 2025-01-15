@@ -11,7 +11,7 @@ layout: default
 {% for seminar in future limit:3 %}
     <li><strong>{{ seminar.title }}</strong></li>
     <p>{{ seminar.date }}</p>
-    <p><strong>Speaker:</strong> {{ seminar.author }}</p>
+    <p><strong>Speaker:</strong> {{ seminar.speaker }}</p>
     <p>{{ seminar.abstract }}</p>
 {% endfor %}
 </ul>
