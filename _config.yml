@@ -1,0 +1,20 @@
+theme: jekyll-theme-midnight
+title: InfroGraviton
+description: journal club on aspects of information, quantum theory, and gravity
+github:
+  is_project_page: false
+
+collections:
+  seminars:
+    output: true
+    
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "seminars"
+    values:
+      layout: "seminar"
