@@ -8,6 +8,8 @@ future: true
 collections:
   seminars:
     output: true
+  suggestions:
+    output: true
     
 defaults:
   - scope:
