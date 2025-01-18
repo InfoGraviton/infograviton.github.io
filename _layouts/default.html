@@ -29,8 +29,13 @@
       <div>
         <nav id="Menu">
           <a href="{{ site.url }}" class="button">Home</a>
-	  <a href="{{ site.url }}/upcoming" class="button">Upcoming</a>
-	  <a href="{{ site.url }}/past" class="button">Past</a>
+	  <div class="dropdown"><button class="dropbtn">List of Seminars</button>
+            <div class="dropdown-content">
+              <a href="{{ site.url }}/upcoming" class="button">Upcoming</a>
+	      <a href="{{ site.url }}/past" class="button">Past</a>
+            </div>
+          </div>
+	  <a href="{{ site.url }}/suggestions" class="button">Suggestions</a>
         </nav>
 
     <div class="wrapper">
