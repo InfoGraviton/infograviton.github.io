@@ -6,9 +6,8 @@ layout: default
 <p>Here is a list of papers that could be interesting to discuss in our meetings.</p>
 
 <!--<h3>Spotlight</h3>-->
+{% assign Suggs = site.suggestions | group_by: 'year' | reverse | sort: 'author' %}
 <ul>
-{% assign SuggsYears = site.suggestions | group_by: 'year' | reverse }}%}
-{% assign Suggs = SuggsYears | sort: 'author' }}%}
 {% for paper in Suggs %}
     <li><strong>{{ paper.title }}</strong></li>
     <p>{{ paper.author }}</p>
