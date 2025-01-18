@@ -8,7 +8,7 @@ layout: default
 {% for seminar in future %}
     <li><a href="{{ seminar.url }}"><strong>{{ seminar.title }}</strong></a></li>
     <p>{{ seminar.date | date_to_string }}</p>
-    <p><strong>Speaker:</strong> {{ seminar.speaker }}</p>
+    <p>{{ seminar.speaker }}</p>
     <p>{{ seminar.abstract }}</p>
 {% endfor %}
 </ul>
