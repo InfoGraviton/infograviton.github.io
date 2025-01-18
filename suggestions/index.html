@@ -10,7 +10,7 @@ layout: default
 {% assign SuggsYears = site.suggestions | group_by: 'year' | reverse }}%}
 {% assign Suggs = SuggsYears | sort: 'author' }}%}
 {% for paper in Suggs %}
-    <li><a href="{{ seminar.url }}"><strong>{{ paper.title }}</strong></a></li>
+    <li><strong>{{ paper.title }}</strong></li>
     <p>{{ paper.author }}</p>
     <p>{{ paper.reference }}</p>
     <p>{{ paper.abstract }}</p>
