@@ -8,7 +8,7 @@ layout: default
 <!--<h3>Spotlight</h3>-->
 {% assign Suggs = site.suggestions | group_by: 'year' | reverse | sort: 'author' %}
 <ul>
-{% for paper in Suggs %}
+{% for paper in site.suggestions %}
     <li><strong>{{ paper.title }}</strong></li>
     <p>{{ paper.author }}</p>
     <p>{{ paper.reference }}</p>
