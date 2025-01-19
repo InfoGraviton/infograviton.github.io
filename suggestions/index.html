@@ -7,7 +7,7 @@ layout: default
 
 <!--<h3>Spotlight</h3>-->
 {% assign SuggsName = site.suggestions | sort: 'sortname' %}
-{% assign Suggs = SuggsName | sort: 'year' %}
+{% assign Suggs = SuggsName | sort: 'year' | reverse %}
 <ul>
 {% for paper in Suggs %}
     <li><strong>{{ paper.title }}</strong></li>
