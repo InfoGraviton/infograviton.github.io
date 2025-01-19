@@ -6,7 +6,7 @@ layout: default
 <p>Here is a list of papers that could be interesting to discuss in our meetings.</p>
 
 <!--<h3>Spotlight</h3>-->
-{% assign SuggsName = site.suggestions | sort: 'sortname' %}
+{% assign SuggsName = site.suggestions | sort: 'sortname' | reverse %}
 {% assign Suggs = SuggsName | sort: 'year' | reverse %}
 <ul>
 {% for paper in Suggs %}
