@@ -3,7 +3,8 @@ type: article
 author:
     - name: William C. C. Lima
     - name: Daniel A. T. Vanzella
-title: Gravity-induced vacuum dominance
+    - name: George E. A. Matsas
+title: Awaking the vacuum in relativistic stars
 journal: Physical Review Letters
 volume: '105'
 number: '15'
