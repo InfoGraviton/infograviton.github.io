@@ -1,0 +1,92 @@
+body {
+    padding:0px 0 20px 0px;
+    margin:0px;
+    font: #{$base-font-size}/#{$base-line-height} $font-regular;
+    color: $text-main;
+    font-weight:normal;
+    text-align: center;
+    background-color: $bg-main;
+    background-attachment:fixed !important;
+    background:linear_gradient($bg-light, $bg-dark);
+}
+
+a:link {
+    color: $accent-primary;
+}
+
+a:visited {
+    color: $accent-visited;
+}
+
+a:active, a:hover {
+    color: $accent-secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:$text-light;
+    margin:0 0 10px;
+    font-family:$font-regular;
+    font-weight:normal
+}
+
+section #title h1 {
+    font-family: $font-light;
+    font-weight:normal;
+    font-size:40px;
+    text-align:center;
+    color: $text-light;
+    line-height:36px
+}
+
+section #title p {
+    color:$text-main;
+    font-family: $font-light;
+    font-weight:normal;
+    font-size:18px;
+    text-align:center
+}
+
+section #title .credits {
+    font-size:11px;
+    font-family:$font-regular;
+    font-weight:normal;
+    color:$text-muted;
+    margin-top:-10px
+}
+
+p, ul, ol {
+    text-align:justify;
+    hyphens: auto;
+}
+
+strong {
+    font-family:$font-bold !important;
+    font-weight:normal
+}
+
+blockquote {
+    margin: 0.35em 0;
+    padding: 1em 1.25em;
+    border-left: 4px solid $accent-primary;
+    background-color: $bg-dark;
+    color: $text-main;
+    font-family: $font-light;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote footer.quote-citation {
+    display: block;
+    margin-top: 0.75em;
+    font-family: $font-regular;
+    font-size: 0.85em;
+    color: $text-muted;
+    text-align: right;
+}
+
+blockquote footer.quote-citation::before {
+    content: "— ";
+    color: $accent-secondary;
+}
