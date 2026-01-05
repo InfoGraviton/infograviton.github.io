@@ -5,14 +5,13 @@ layout: default
 
 <p>Here is a list of papers that could be interesting to discuss in our meetings.</p>
 
-<!--<h3>Spotlight</h3>-->
-{% assign SuggsName = site.suggestions | sort: 'sortname' | reverse %}
-{% assign Suggs = SuggsName | sort: 'year' | reverse %}
+{% assign suggestions = site.suggestions | sort: 'date' | reverse %}
 <ul>
-{% for paper in Suggs %}
-    <li><strong>{{ paper.title }}</strong></li>
-    <p>{{ paper.author }}</p>
-    <p>{{ paper.reference }}</p>
-    <p>{{ paper.abstract }}</p>
+{% for paper in suggestions %}
+    <li>{%- include bibitem.html entry=paper %}<br/><br/>
+    
+    {{ paper.content | markdownify }}
+
+    </li>
 {% endfor %}
 </ul>

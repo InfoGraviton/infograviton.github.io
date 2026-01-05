@@ -9,7 +9,7 @@ collections:
   seminars:
     output: true
   suggestions:
-    output: true
+    output: false
     
 defaults:
   - scope:
