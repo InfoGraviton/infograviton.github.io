@@ -1,0 +1,83 @@
+{%- assign s = include.source -%}
+
+{%- case s.type -%}
+
+{%- when "book" -%}
+  {%- include hyperlink.html source=s -%}
+  {%- if link -%}
+    <em><a href="{{ link }}" target="_blank">{{ s.title }}</a></em>
+  {%- else -%}
+    <em>{{ s.title }}</em>
+  {%- endif -%}
+  {%- if s.editor %}
+    {%- if s.editor.size==1 -%}
+      , ed. {% include authorlist.html authorlist=entry.editor -%}
+    {%- else -%}
+      , eds. {% include authorlist.html authorlist=entry.editor -%}
+    {%- endif -%} 
+  {%- endif -%}
+  {%- if s.publisher %}
+     ({{ s.publisher }}: {{ s.location }}, {{ s.date | date: "%Y" }})
+  {%- endif -%}. {% include eprintdata.html source=s %}
+  
+
+{%- when "article" -%}
+  “{{ s.title }}”.
+  {% if s.journal -%}
+    {%- include hyperlink.html source=s -%}
+    {%- if link -%}
+      <a href="{{ link }}" target="_blank">{% include journaldata.html source=s %}</a>.
+    {%- else -%}
+      {% include journaldata.html source=s %}.
+    {%- endif -%}
+  {%- endif -%}
+  {% include eprintdata.html source=s %}
+
+{%- when "thesis" -%}
+  {%- include hyperlink.html source=s -%}
+  {%- if link -%}
+    “<a href="{{ link }}" target="_blank">{{ s.title }}</a>”.
+  {%- else -%}
+    “{{ s.title }}”.
+  {%- endif -%}
+  {%- if s.thesistype %}
+     {{ s.thesistype }}.
+  {%- endif %}
+   {{ s.location }}: {{ s.institution }}, {{ s.date | date: "%Y" }}. {% include eprintdata.html source=s %}
+
+{%- when "unpublished" -%}
+  {%- include hyperlink.html source=s -%}
+  {%- if link -%}
+    “<a href="{{ link }}" target="_blank">{{ s.title }}</a>”.
+  {%- else -%}
+    “{{ s.title }}”.
+  {%- endif %}
+   {{ s.date | date: "%Y" }}. {% include eprintdata.html source=s %}
+
+{%- when "tv" -%}
+  {%- include hyperlink.html source=s -%}
+  {%- if link -%}
+    <a href="{{ link }}" target="_blank"><em>{{ s.series }}</em>{%- if s.season and s.episode -%}, S{{ s.season | prepend: "0" | slice: -2, 2 }}E{{ s.episode | prepend: "0" | slice: -2, 2 }}{%- endif -%}{%- if s.title -%}: “{{ s.title }}”{%- endif -%}{%- if s.date %} ({{ s.date | date: "%Y" }}){%- endif -%}</a>.
+  {%- else -%}
+    <em>{{ s.series }}</em>{%- if s.season and s.episode -%}, S{{ s.season | prepend: "0" | slice: -2, 2 }}E{{ s.episode | prepend: "0" | slice: -2, 2 }}{%- endif -%}{%- if s.title -%}: “{{ s.title }}”{%- endif -%}{%- if s.date %} ({{ s.date | date: "%Y" }}){%- endif -%}.
+  {%- endif -%}
+
+{%- when "movie" -%}
+  {%- include hyperlink.html source=s -%}
+  {%- if link -%}
+    <a href="{{ link }}" target="_blank"><em>{{ s.title }}</em>{%- if s.date %} ({{ s.date | date: "%Y" }}){%- endif -%}</a>.
+  {%- else -%}
+    <em>{{ s.title }}</em>{%- if s.date %} ({{ s.date | date: "%Y" }}){%- endif -%}.
+  {%- endif -%}
+
+{%- when "omit" -%}
+
+{%- else -%}
+  {%- include hyperlink.html source=s -%}
+  {%- if link -%}
+    <a href="{{ link }}" target="_blank">{{ s.title }}{%- if s.date %} ({{ s.date | date: "%Y" }}){%- endif -%}</a>.
+  {%- else -%}
+    {{ s.title }}{%- if s.date %} ({{ s.date | date: "%Y" }}){%- endif -%}.
+  {%- endif -%}
+
+{%- endcase -%}

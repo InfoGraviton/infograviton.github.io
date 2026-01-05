@@ -1,0 +1,12 @@
+{%- assign s = include.source -%}
+{%- if s.doi -%}
+    {%- assign link = "https://doi.org/" | append: s.doi -%}
+{%- elsif s.hdl -%}
+    {%- assign link = "https://hdl.handle.net/" | append: s.hdl -%}
+{%- elsif s.imdb -%}
+    {%- assign link = "https://www.imdb.com/title/" | append: s.imdb -%}
+{%- elsif s.src -%}
+    {%- assign link = s.src -%}
+{%- else -%}
+    {%- assign link = nil -%}
+{%- endif -%}
