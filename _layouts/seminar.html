@@ -32,3 +32,12 @@ layout: default
 {% endfor %}
 </ul>
 {%- endif -%}
+
+{%- if page.resources -%}
+<p><strong>Attachments:</strong></p>
+  <ul>
+  {% for resource in page.resources %}
+      <li><a href="{{ resource.src }}" target="_blank">{{ resource.title }}</a></li>
+  {% endfor %}
+  </ul>
+{%- endif -%}

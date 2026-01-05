@@ -6,17 +6,6 @@ layout: default
 <ul>
 {% assign past = site.seminars | sort: 'date' | reverse | where_exp:"seminar","seminar.date < site.time" %}
 {% for seminar in past %}
-    {% if seminar.keywords %}
-    <li><a href="{{ seminar.url }}"><strong>{{ seminar.title }}</strong></a></li>
-    <p>{{ seminar.date | date_to_string }}</p>
-    <p>{{ seminar.speaker }}</p>
-    <p>{{ seminar.abstract }}</p>
-    {% else %}
-        <li><a href="{{ seminar.url }}"><strong>{{ seminar.title }}</strong></a>
-        <p>{{ seminar.date | date_to_string }}</p>
-        <p>{{ seminar.speaker.name }}</p>
-        {{ seminar.content | markdownify }}
-        </li>
-    {% endif %}
+    {% include include_seminar.html seminar=seminar %}
 {% endfor %}
 </ul>
