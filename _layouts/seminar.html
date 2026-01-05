@@ -15,11 +15,20 @@ layout: default
 
 {{ page.content | markdownify }}
 
-{%- assign bibliography = page.bibliography -%}
 <ul>
-{% for item in bibliography -%}
-    {%- assign paper=site.bibliography[item] -%}
-    <li>{%- include bibitem.html entry=paper %}</li>
-{%- endfor %}
+{% for key in page.bibliography %}
+  {% assign paper = nil %}
+  {% for p in site.bibliography %}
+    {% if p.slug == key %}
+      {% assign paper = p %}
+    {% endif %}
+  {% endfor %}
+
+  {% if paper %}
+    <li>{% include bibitem.html entry=paper %}</li>
+  {% else %}
+    <li><strong>Missing entry:</strong> {{ key }}</li>
+  {% endif %}
+{% endfor %}
 </ul>
 {%- endif -%}

@@ -22,7 +22,9 @@
   
 
 {%- when "article" -%}
+  {%- unless s.notitle -%}
   “{{ s.title }}”.
+  {%- endunless -%}
   {% if s.journal -%}
     {%- include hyperlink.html source=s -%}
     {%- if link -%}

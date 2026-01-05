@@ -4,7 +4,8 @@ author:
     - name: J. P. Cavalcante
     - name: M. Richartz
     - name: B. C. Cunha
-title: Massive scalar perturbations in Kerr Black Holes: near extremal analysis
+title: >
+    Massive scalar perturbations in Kerr Black Holes: near extremal analysis
 journal: Physical Review D
 volume: '110'
 pages: '124064'
