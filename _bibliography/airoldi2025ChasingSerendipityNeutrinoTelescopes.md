@@ -1,11 +1,11 @@
 ---
 type: article
 author:
-    - name: L. F. T. Airoldi
-    - name: G. F. S. Alves
-    - name: Y. F. Perez-Gonzalez
-    - name: G. M. Salla
-    - name: R. Zukanovich Funchal
+    - name: Lua F. T. Airoldi
+    - name: Gustavo F. S. Alves
+    - name: Yuber F. Perez-Gonzalez
+    - name: Gabriel M. Salla
+    - name: Renata Zukanovich Funchal
 title: >
     Chasing Serendipity: Tackling Transient Sources with Neutrino Telescopes
 date: 2025-05-01

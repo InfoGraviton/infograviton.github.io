@@ -1,9 +1,9 @@
 ---
 type: article
 author:
-    - name: J. P. Cavalcante
-    - name: M. Richartz
-    - name: B. C. Cunha
+    - name: João Paulo Cavalcante
+    - name: Maurício Richartz
+    - name: Bruno Carneiro da Cunha
 title: >
     Massive scalar perturbations in Kerr Black Holes: near extremal analysis
 journal: Physical Review D
