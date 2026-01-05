@@ -2,7 +2,7 @@
 type: article
 author:
     - name: John F. Donoghue
-title: Do $\\Lambda_{CC}$ and $G$ Run?
+title: "Do $\\Lambda_{CC}$ and $G$ Run?"
 journal: Acta Physica Polonica B
 volume: '55'
 pages: '12-A1'
