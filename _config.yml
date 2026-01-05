@@ -10,6 +10,8 @@ collections:
     output: true
   suggestions:
     output: false
+  bibliography:
+    output: false
     
 defaults:
   - scope:
