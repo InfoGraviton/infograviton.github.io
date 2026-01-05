@@ -4,8 +4,7 @@ author:
     - name: Rogério Capobianco
     - name: Betti Hartmann
     - name: Jutta Kunz
-title: >
-    Geodesic motion in a swirling universe: The complete set of solutions
+title: "Geodesic motion in a swirling universe: The complete set of solutions"
 journal: Physical Review D
 volume: '109'
 pages: '064042'

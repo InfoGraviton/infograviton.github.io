@@ -3,8 +3,7 @@ type: article
 author:
     - name: Daniel A. Turolla Vanzella
     - name: Jeremy Butterfield
-title: >
-    A frame-bundle formulation of quantum reference frames: from superposition of perspectives to superposition of geometries
+title: "A frame-bundle formulation of quantum reference frames: from superposition of perspectives to superposition of geometries"
 date: 2024-06-24
 arxiv: '2406.15838'
 arxivclass: gr-qc

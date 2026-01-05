@@ -4,8 +4,7 @@ author:
     - name: Rogério Capobianco
     - name: Betti Hartmann
     - name: Jutta Kunz
-title: >
-    Motion of charged particles in an electromagnetic swirling universe: The complete set of solutions
+title: "Motion of charged particles in an electromagnetic swirling universe: The complete set of solutions"
 journal: Physical Review D
 volume: '110'
 pages: '084078'

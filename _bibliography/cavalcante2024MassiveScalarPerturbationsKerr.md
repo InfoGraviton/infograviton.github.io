@@ -4,8 +4,7 @@ author:
     - name: João Paulo Cavalcante
     - name: Maurício Richartz
     - name: Bruno Carneiro da Cunha
-title: >
-    Massive scalar perturbations in Kerr Black Holes: near extremal analysis
+title: "Massive scalar perturbations in Kerr Black Holes: near extremal analysis"
 journal: Physical Review D
 volume: '110'
 pages: '124064'
