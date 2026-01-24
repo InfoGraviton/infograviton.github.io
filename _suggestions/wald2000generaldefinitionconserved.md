@@ -1,0 +1,15 @@
+---
+type: article
+author:
+    - name: Robert M. Wald
+    - name: Andreas Zoupas
+title: 'A general definition of "conserved quantities" in general relativity and other theories of gravity'
+journal: Physical Review D
+volume: '61'
+number: '08'
+pages: '084027'
+date: 2000-03-28
+doi: '10.1103/PhysRevD.61.084027'
+arxiv: 'gr-qc/9911095'
+---
+In general relativity, the notion of mass and other conserved quantities at spatial infinity can be defined in a natural way via the Hamiltonian framework: Each conserved quantity is associated with an asymptotic symmetry and the value of the conserved quantity is defined to be the value of the Hamiltonian which generates the canonical transformation on phase space corresponding to this symmetry. However, such an approach cannot be employed to define “conserved quantities” in a situation where symplectic current can be radiated away (such as occurs at null infinity in general relativity) because there does not, in general, exist a Hamiltonian which generates the given asymptotic symmetry. (This fact is closely related to the fact that the desired “conserved quantities” are not, in general, conserved.) In this paper we give a prescription for defining “conserved quantities” by proposing a modification of the equation that must be satisfied by a Hamiltonian. Our prescription is a very general one, and is applicable to a very general class of asymptotic conditions in arbitrary diffeomorphism covariant theories of gravity derivable from a Lagrangian, although we have not investigated existence and uniqueness issues in the most general contexts. In the case of general relativity with the standard asymptotic conditions at null infinity, our prescription agrees with the one proposed by Dray and Streubel from entirely different considerations.
