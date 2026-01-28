@@ -4,6 +4,7 @@ description: journal club on aspects of information, quantum theory, and gravity
 github:
   is_project_page: false
 future: true
+timezone: America/Sao_Paulo
 
 collections:
   seminars:
