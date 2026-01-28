@@ -1,14 +1,7 @@
 {%- assign seminar=include.seminar -%}
 
-{%- if seminar.keywords %}
-    <li><a href="{{ seminar.url }}"><strong>{{ seminar.title }}</strong></a></li>
-    <p>{% include typeset_date.html date=seminar.date timezone=seminar.timezone %}</p>
-    <p>{{ seminar.speaker }}</p>
-    <p>{{ seminar.abstract }}</p>
-{% else %}
-    <li><a href="{{ seminar.url }}"><strong>{{ seminar.title }}</strong></a>
-    <p>{% include typeset_date.html date=seminar.date timezone=seminar.timezone %}</p>
-    <p>{{ seminar.speaker.name }}</p>
-    {{ seminar.content | markdownify }}
-    </li>
-{% endif -%}
+<li><a href="{{ seminar.url }}"><strong>{{ seminar.title }}</strong></a>
+<p>{% include typeset_date.html date=seminar.date timezone=seminar.timezone %}</p>
+<p>{% include authorlist.html authorlist=seminar.speaker %}</p>
+{{ seminar.content | markdownify }}
+</li>

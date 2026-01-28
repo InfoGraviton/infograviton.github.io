@@ -1,17 +1,9 @@
 ---
 layout: default
 ---
-{%- if page.keywords -%}
 <h1>{{ page.title }}</h1>
 <p>{% include typeset_date.html date=page.date timezone=page.timezone %}</p>
-<p>{{ page.speaker }}</p>
-<p>{{ page.abstract }}</p>
-
-{{ content }}
-{%- else -%}
-<h1>{{ page.title }}</h1>
-<p>{% include typeset_date.html date=page.date timezone=page.timezone %}</p>
-<p>{% include authorname.html author=page.speaker %}</p>
+<p>{% include authorlist.html authorlist=page.speaker %}</p>
 
 {{ page.content | markdownify }}
 
@@ -31,7 +23,6 @@ layout: default
   {% endif %}
 {% endfor %}
 </ul>
-{%- endif -%}
 
 {%- if page.resources -%}
 <p><strong>Attachments:</strong></p>
