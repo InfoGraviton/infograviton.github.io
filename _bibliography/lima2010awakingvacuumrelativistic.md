@@ -2,8 +2,8 @@
 type: article
 author:
     - name: William C. C. Lima
-    - name: Daniel A. T. Vanzella
     - name: George E. A. Matsas
+    - name: Daniel A. T. Vanzella
 title: Awaking the vacuum in relativistic stars
 journal: Physical Review Letters
 volume: '105'
