@@ -1,5 +1,5 @@
 {% if include.date > site.time %}
-  {{ include.date | date: "%a, %d %b %Y, %H:%M" }} ({{ site.timezone }})
+  <time class="tz-date" datetime="{{ seminar.date | date_to_xmlschema }}" data-format="datetime">{{ include.date | date: "%a, %d %b %Y, %H:%M" }} ({{ site.timezone }})</time>
 {% else %}
   {{ include.date | date_to_string }}
 {% endif %}

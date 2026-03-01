@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}" data-site-timezone="{{ site.timezone }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +25,9 @@
     <script id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
+
+    <!-- Timezones -->
+    <script src="{{ '/assets/js/timezone.js' | relative_url }}"></script>
 
     <!-- Mobile Hamburger Toggle -->
     <script>
@@ -72,7 +75,7 @@
           <h1 style="font-weight: 500">{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <span class="credits left">Hosted on GitHub Pages</span>
+          <span class="credits left">Timezone: <select id="tz-select" aria-label="Select timezone"></select></span>
           <span class="credits right">Theme based on "Midnight", by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
         </div>
         
