@@ -7,6 +7,7 @@ title: Probing the Schrödinger-Newton equation in a Stern-Gerlach-like experime
 journal: Physical Review A
 volume: '109'
 number: '3'
+pages: '032223'
 doi: 10.1103/PhysRevA.109.032223
 date: 2024-03-25
 arxiv: '2310.18072'
