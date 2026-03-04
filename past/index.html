@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+{%- assign past = site.seminars | sort: 'date' | reverse | where_exp:"seminar","seminar.date < site.time" %}
 <h1>Past Seminars</h1>
 
+<p>We have had {{ past.size }} seminars so far! Here is the complete list.</p>
+
 <ul>
-{% assign past = site.seminars | sort: 'date' | reverse | where_exp:"seminar","seminar.date < site.time" %}
 {% for seminar in past %}
     {% include include_seminar.html seminar=seminar %}
 {% endfor %}
