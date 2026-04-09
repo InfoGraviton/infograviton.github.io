@@ -24,3 +24,4 @@ defaults:
       type: "seminars"
     values:
       layout: "seminar"
+
