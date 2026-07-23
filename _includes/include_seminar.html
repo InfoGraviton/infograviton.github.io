@@ -1,7 +1,7 @@
 {%- assign seminar=include.seminar -%}
 
 <li><a href="{{ seminar.url }}"><strong>{{ seminar.title | smartify }}</strong></a>
-<p>{% include typeset_date.html date=seminar.date timezone=seminar.timezone %}</p>
+<p>{% include typeset_date_lang.html date=seminar.date lang=seminar.language -%}</p>
 <p>{% include authorlist.html authorlist=seminar.speaker %}</p>
 {{ seminar.content | markdownify }}
 </li>

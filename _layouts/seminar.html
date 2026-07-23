@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1>{{ page.title | smartify }}</h1>
-<p>{% include typeset_date.html date=page.date timezone=page.timezone %}</p>
+<p>{% include typeset_date_lang.html date=page.date timezone=page.timezone %}</p>
 <p>{% include authorlist.html authorlist=page.speaker %}</p>
 
 {{ page.content | markdownify }}

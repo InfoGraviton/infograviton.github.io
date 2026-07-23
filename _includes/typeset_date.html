@@ -1,5 +1,0 @@
-{% if include.date > site.time %}
-  {{ include.date | date: "%a, %d %b %Y, %H:%M" }} ({{ site.timezone }})
-{% else %}
-  {{ include.date | date_to_string }}
-{% endif %}
